@@ -13,7 +13,7 @@ next と依存ライブラリのインストール
 
     touch tsconfig.json
 
-pages/index.ts を書く (パス名は決まっている)
+pages/index.tsx を書く。パス名は決まっていて、pages/hoge.tsx のように tsx を置くと http://localhost/hoge からアクセスできる。対応する html は Next.js が自分で作る。
 
 ```typescript
 export default function Home() {
@@ -38,7 +38,7 @@ npm run dev
 
 http://localhost:3000 を開く
 
-tsconfig.json にエラーがあるので compilerOptions に以下を追加。
+tsconfig.json にエラーがあるので compilerOptions に以下を追加。またお好みで `"strict": false` したりする。
 
     "moduleResolution": "node",
 
@@ -54,6 +54,8 @@ lint の設定
     * ビルド時に getStaticProps を呼んでページを生成する。
 * getServerSideProps: Server-side Rendering
     * 実行時に getServerSideProps を呼んでページを生成する。
+
+npm run build && npm start するとレンダリング方式の違いを確認できる。Next.js は生の React.js と違いサーバ側に Node が必須。
 
 ## 参考
 

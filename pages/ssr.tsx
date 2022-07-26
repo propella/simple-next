@@ -6,7 +6,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return game();
 };
 
-export default function ServerSide({ image, name }) {
+export default function ServerSide({
+  image,
+  name,
+}: ReturnType<typeof game>["props"]) {
   return (
     <>
       <p>Game</p>

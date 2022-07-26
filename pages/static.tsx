@@ -6,7 +6,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return game();
 };
 
-export default function Static({ image, name }) {
+export default function Static({
+  image,
+  name,
+}: ReturnType<typeof game>["props"]) {
   return (
     <>
       <p>Game</p>
