@@ -46,7 +46,18 @@ lint の設定
 
     npm run lint
 
+## Pre-rendering
+
+利用する関数によって2つのレンダリング方式を選べる。
+
+* getStaticProps: Static Generation
+    * ビルド時に getStaticProps を呼んでページを生成する。
+* getServerSideProps: Server-side Rendering
+    * 実行時に getServerSideProps を呼んでページを生成する。
+
 ## 参考
 
 * [Getting Started with Next.js - From React to Next.js | Learn Next.js](https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs)
 * [Create tsconfig.json - TypeScript | Learn Next.js](https://nextjs.org/learn/excel/typescript/create-tsconfig)
+* [Assets - Assets, Metadata, and CSS | Learn Next.js](https://nextjs.org/learn/basics/assets-metadata-css/assets)
+* [Basic Features: Pages | Next.js](https://nextjs.org/docs/basic-features/pages)
