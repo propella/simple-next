@@ -7,7 +7,7 @@
 next と依存ライブラリのインストール
 
     npm install react react-dom next
-    npm install --save-dev typescript @types/react @types/node
+    npm install --save-dev typescript @types/react @types/node eslint
 
 空の tsconfig.json を作る
 
@@ -27,7 +27,8 @@ package.json に起動スクリプト追加
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
 ```
 
@@ -40,6 +41,10 @@ http://localhost:3000 を開く
 tsconfig.json にエラーがあるので compilerOptions に以下を追加。
 
     "moduleResolution": "node",
+
+lint の設定
+
+    npm run lint
 
 ## 参考
 
