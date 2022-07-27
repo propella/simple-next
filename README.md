@@ -61,6 +61,12 @@ lint の設定
 
 npm run build && npm start するとレンダリング方式の違いを確認できる。Next.js は生の React.js と違いサーバ側に Node やロードバランサ等が必須なので、Vercel のようなビジネスが成立する。
 
+## Export
+
+    npx next build && npx next export
+
+で生の React のように静的なアプリを生成するので、従来型の SPA を作れる。この場合 `getServerSideProps` のような実行時に Node サーバーが必要な機能が使われているとエラーになる。
+
 ## 参考
 
 * [Getting Started with Next.js - From React to Next.js | Learn Next.js](https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs)
