@@ -1,6 +1,8 @@
 # Next.js / TypeScript を簡単に始める手順
 
-手軽に React.js を使った実験をしたいので、設定無しで使える Next.js の利用開始手順をまとめた。
+https://qiita.com/propella/items/e2b406cda8266dcd2974
+
+手軽に React.js を使った実験をしたいので、設定無しで使える Next.js の利用開始手順をまとめた。(https://github.com/propella/simple-next)
 
 ## 手順
 
@@ -38,7 +40,7 @@ package.json に起動スクリプト追加
 
 http://localhost:3000 を開く
 
-tsconfig.json にエラーがあるので compilerOptions に以下を追加。またお好みで `"strict": false` したりする。
+tsconfig.json にエラーがあるので compilerOptions に以下を追加。またお好みで `"strict": true` したりする。
 
     "moduleResolution": "node",
 
